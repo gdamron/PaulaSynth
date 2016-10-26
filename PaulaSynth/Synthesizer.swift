@@ -27,15 +27,15 @@ class Synthesizer: NSObject {
         switch sound {
         case .Sawtooth:
             synth = AKOscillatorBank(waveform: AKTable(.sawtooth))
-        case .Scream:
-            synth = AKFMOscillatorBank(waveform: AKTable(.reverseSawtooth),
-                                       carrierMultiplier: 0.9,
-                                       modulatingMultiplier: 1.5,
-                                       modulationIndex: 1.01,
-                                       attackDuration: 0.01,
-                                       decayDuration: 0.1,
-                                       sustainLevel: 0.55,
-                                       releaseDuration: 0.2,
+        case .FM:
+            synth = AKFMOscillatorBank(waveform: AKTable(.sine),
+                                       carrierMultiplier: 1,
+                                       modulatingMultiplier: 0.75,
+                                       modulationIndex: 20,
+                                       attackDuration: 0.001,
+                                       decayDuration: 1.5,
+                                       sustainLevel: 0.6,
+                                       releaseDuration: 0.25,
                                        detuningOffset: 0,
                                        detuningMultiplier: 1)
         case .Sine:
@@ -46,10 +46,10 @@ class Synthesizer: NSObject {
             synth = AKOscillatorBank(waveform: AKTable(.triangle))
         case .TwentySixHundred:
             synth = AKPWMOscillatorBank(pulseWidth: 0.8,
-                                        attackDuration: 0.1,
-                                        decayDuration: 0,
+                                        attackDuration: 0.001,
+                                        decayDuration: 0.75,
                                         sustainLevel: 0.8,
-                                        releaseDuration: 0,
+                                        releaseDuration: 0.2,
                                         detuningOffset: 0,
                                         detuningMultiplier: 1)
         }
