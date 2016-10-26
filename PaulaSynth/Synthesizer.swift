@@ -12,6 +12,7 @@ import AudioKit
 class Synthesizer: NSObject {
     
     fileprivate var synth: AKPolyphonicNode!
+    fileprivate var sound = SynthSound.Square
     
     static func start() {
         AudioKit.start()
@@ -22,6 +23,7 @@ class Synthesizer: NSObject {
     }
     
     init(sound: SynthSound, isPoly: Bool) {
+        self.sound = sound
         switch sound {
         case .Sawtooth:
             synth = AKOscillatorBank(waveform: AKTable(.sawtooth))
@@ -56,7 +58,7 @@ class Synthesizer: NSObject {
     }
     
     func noteOn(note: Int) {
-        synth.play(noteNumber: note, velocity: 100)
+        synth.play(noteNumber: note, velocity: sound.velocity)
     }
     
     func noteOff(note: Int) {

@@ -38,7 +38,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
         
         let dur = transitionDuration(using: transitionContext)
         
-        UIView.animate(withDuration: dur, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: dur, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
                 menuVC.view.transform = toTransform
                 bottomVC.settingsTab.transform = tabTransform
             }) { (finished) in
@@ -49,7 +49,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.2;
+        return 0.3;
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

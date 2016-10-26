@@ -85,7 +85,7 @@ class UserSettings: NSObject {
         }
         
         if let soundVal = defaults.string(forKey: Keys.Sound.rawValue) {
-            sound = SynthSound(rawValue: soundVal)!
+            sound = SynthSound(key: soundVal)
         }
     }
 }

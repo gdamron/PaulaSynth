@@ -39,6 +39,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -46,6 +54,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         refreshUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.2) {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
     }
     
     @IBAction func chooseSound(_ button: UIButton) {
@@ -80,7 +95,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             UserSettings.sharedInstance.scale = Scale(rawValue: selectedScale)!
         } else {
             soundLabel.text = selectedSound
-            UserSettings.sharedInstance.sound = SynthSound(rawValue: selectedSound)!
+            UserSettings.sharedInstance.sound = SynthSound(key: selectedSound)
         }
         
         dismissPicker()
@@ -91,7 +106,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     @IBAction func mainViewTapped(_ tap: UIGestureRecognizer) {
-        if !pickerWrapper.isHidden {
+        let point = tap.location(in: view)
+        let yThresh = view.frame.height - pickerWrapper.frame.height
+        if !pickerWrapper.isHidden && point.y < yThresh {
             dismissPicker()
         }
     }
@@ -106,8 +123,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let settings = UserSettings.sharedInstance
         scaleLabel.text = settings.scale.rawValue
         selectedScale = settings.scale.rawValue
-        soundLabel.text = settings.sound.rawValue
-        selectedSound = settings.sound.rawValue
+        soundLabel.text = settings.sound.name
+        selectedSound = settings.sound.name
         lowNoteLabel.text = noteName(forInt: settings.lowNote)
         lowNoteSlider.value = Float(CGFloat(settings.lowNote))
         polyphonyLabel.text = settings.polyphonyOn ? "On" : "Off"
@@ -165,7 +182,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             return Scale.list.count
         }
         
-        return 5
+        return SynthSound.keys.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

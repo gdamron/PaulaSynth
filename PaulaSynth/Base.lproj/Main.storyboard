@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioEngine2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PaulaSynth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,14 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-TI-VQP">
-                                <color key="backgroundColor" red="1" green="0.46012791671122599" blue="0.37301709954596962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-TI-VQP" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="KG6-hl-au4"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.24274647099999999" blue="0.23943073149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -35,22 +50,52 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40c-su-48p">
-                                <color key="backgroundColor" red="0.36118581278444284" green="0.70044119289186813" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40c-su-48p" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.79499155980000002" green="0.51987495849999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view alpha="0.80000000000000004" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzT-83-UeA">
-                                <color key="backgroundColor" red="0.55348219406261157" green="1" blue="0.74735666048267479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzT-83-UeA" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="FgM-Cv-8Fa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.3165055477" green="0.90817039109999997" blue="0.26441010209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -59,22 +104,52 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view alpha="0.80000000000000004" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-0a-hMN">
-                                <color key="backgroundColor" red="0.79499155980965208" green="0.5198749585427942" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-0a-hMN" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view alpha="0.80000000000000004" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rf-RK-PcO">
-                                <color key="backgroundColor" red="1" green="0.96488636650611614" blue="0.62264380556942001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rf-RK-PcO" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="CzF-bG-tiR"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.62579320429999996" green="0.75877951170000002" blue="0.82633341169999996" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -83,22 +158,52 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view alpha="0.80000000000000004" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-gS-8D4">
-                                <color key="backgroundColor" red="1" green="0.57065085868475274" blue="0.70217944495891926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-gS-8D4" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.72305650720630155" blue="0.17760401061720676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view alpha="0.80000000000000004" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S02-dx-Duh">
-                                <color key="backgroundColor" red="0.41219491127814012" green="0.21543730420174778" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S02-dx-Duh" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="STp-oS-gIG"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.95153806098372407" green="1" blue="0.34886616079876398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -107,11 +212,26 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view alpha="0.80000000000000004" tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW6-j2-gqz">
-                                <color key="backgroundColor" red="0.5711329650138145" green="0.90817039106145248" blue="0.50386672747368189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view alpha="0.80000000000000004" tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW6-j2-gqz" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.34850899219999998" green="1" blue="0.2911459179" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -168,23 +288,24 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="zW6-j2-gqz" firstAttribute="leading" secondItem="S02-dx-Duh" secondAttribute="trailing" constant="2" id="0vG-Vf-n3X"/>
-                            <constraint firstItem="hzT-83-UeA" firstAttribute="top" secondItem="DzO-TI-VQP" secondAttribute="bottom" constant="2" id="1PM-Ex-bU9"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="top" secondItem="40c-su-48p" secondAttribute="bottom" constant="2" id="3hK-DA-Hq0"/>
+                            <constraint firstItem="zW6-j2-gqz" firstAttribute="leading" secondItem="S02-dx-Duh" secondAttribute="trailing" id="0vG-Vf-n3X"/>
+                            <constraint firstItem="hzT-83-UeA" firstAttribute="top" secondItem="DzO-TI-VQP" secondAttribute="bottom" id="1PM-Ex-bU9"/>
+                            <constraint firstItem="dHa-0a-hMN" firstAttribute="top" secondItem="40c-su-48p" secondAttribute="bottom" id="3hK-DA-Hq0"/>
                             <constraint firstItem="S02-dx-Duh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ajs-mw-vDe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zW6-j2-gqz" secondAttribute="bottom" id="CaW-3X-rBY"/>
                             <constraint firstItem="S02-dx-Duh" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="D75-lg-0Ww"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S02-dx-Duh" secondAttribute="bottom" id="E5p-8i-mgR"/>
                             <constraint firstItem="c5X-gS-8D4" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="Fkh-js-c9p"/>
-                            <constraint firstItem="c5X-gS-8D4" firstAttribute="top" secondItem="dHa-0a-hMN" secondAttribute="bottom" constant="2" id="FtZ-L3-MyT"/>
+                            <constraint firstItem="c5X-gS-8D4" firstAttribute="top" secondItem="dHa-0a-hMN" secondAttribute="bottom" id="FtZ-L3-MyT"/>
                             <constraint firstItem="hzT-83-UeA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K83-S7-hko"/>
-                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="top" secondItem="hzT-83-UeA" secondAttribute="bottom" constant="2" id="MDK-fv-Nae"/>
+                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="top" secondItem="hzT-83-UeA" secondAttribute="bottom" id="MDK-fv-Nae"/>
                             <constraint firstItem="7Rf-RK-PcO" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="NrD-te-UI7"/>
                             <constraint firstItem="dHa-0a-hMN" firstAttribute="width" secondItem="40c-su-48p" secondAttribute="width" id="Stv-kG-sfN"/>
                             <constraint firstItem="7Rf-RK-PcO" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="UpE-cI-Vv9"/>
-                            <constraint firstItem="DzO-TI-VQP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.248" id="XX8-RR-Wmv"/>
                             <constraint firstItem="BaG-Lm-vVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-8" id="Xfq-cJ-vbW"/>
                             <constraint firstItem="7Rf-RK-PcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZdS-oI-MuT"/>
                             <constraint firstItem="hzT-83-UeA" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="ZyX-l2-bdq"/>
-                            <constraint firstItem="zW6-j2-gqz" firstAttribute="top" secondItem="c5X-gS-8D4" secondAttribute="bottom" constant="2" id="a62-J0-xdb"/>
+                            <constraint firstItem="zW6-j2-gqz" firstAttribute="top" secondItem="c5X-gS-8D4" secondAttribute="bottom" id="a62-J0-xdb"/>
                             <constraint firstItem="c5X-gS-8D4" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="bpj-d7-9zH"/>
                             <constraint firstItem="hzT-83-UeA" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="bqW-YK-2k9"/>
                             <constraint firstItem="S02-dx-Duh" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="cwo-pb-VnT"/>
@@ -193,8 +314,8 @@
                             <constraint firstItem="DzO-TI-VQP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fts-gB-fvr"/>
                             <constraint firstItem="40c-su-48p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gQo-Bx-66a"/>
                             <constraint firstAttribute="trailing" secondItem="zW6-j2-gqz" secondAttribute="trailing" id="h9u-kE-rjl"/>
-                            <constraint firstItem="c5X-gS-8D4" firstAttribute="leading" secondItem="7Rf-RK-PcO" secondAttribute="trailing" constant="2" id="iB6-lB-z5N"/>
-                            <constraint firstItem="40c-su-48p" firstAttribute="leading" secondItem="DzO-TI-VQP" secondAttribute="trailing" constant="2" id="iEh-3f-167"/>
+                            <constraint firstItem="c5X-gS-8D4" firstAttribute="leading" secondItem="7Rf-RK-PcO" secondAttribute="trailing" id="iB6-lB-z5N"/>
+                            <constraint firstItem="40c-su-48p" firstAttribute="leading" secondItem="DzO-TI-VQP" secondAttribute="trailing" id="iEh-3f-167"/>
                             <constraint firstItem="dHa-0a-hMN" firstAttribute="leading" secondItem="hzT-83-UeA" secondAttribute="trailing" constant="2" id="isf-mD-rN4"/>
                             <constraint firstItem="BaG-Lm-vVl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kYJ-mC-ZvW"/>
                             <constraint firstItem="DzO-TI-VQP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="myq-rD-fTY"/>
@@ -202,8 +323,8 @@
                             <constraint firstAttribute="trailing" secondItem="c5X-gS-8D4" secondAttribute="trailing" id="oaw-Yc-O0P"/>
                             <constraint firstItem="dHa-0a-hMN" firstAttribute="width" secondItem="hzT-83-UeA" secondAttribute="width" id="pAK-ua-gPr"/>
                             <constraint firstItem="40c-su-48p" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="pAi-In-A5I"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="leading" secondItem="hzT-83-UeA" secondAttribute="trailing" constant="2" id="qfv-E6-iHM"/>
-                            <constraint firstItem="S02-dx-Duh" firstAttribute="top" secondItem="7Rf-RK-PcO" secondAttribute="bottom" constant="2" id="vU5-Fn-P1D"/>
+                            <constraint firstItem="dHa-0a-hMN" firstAttribute="leading" secondItem="hzT-83-UeA" secondAttribute="trailing" id="qfv-E6-iHM"/>
+                            <constraint firstItem="S02-dx-Duh" firstAttribute="top" secondItem="7Rf-RK-PcO" secondAttribute="bottom" id="vU5-Fn-P1D"/>
                             <constraint firstAttribute="trailing" secondItem="dHa-0a-hMN" secondAttribute="trailing" id="wGE-oH-kNi"/>
                             <constraint firstItem="40c-su-48p" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="x3y-YG-whS"/>
                             <constraint firstItem="dHa-0a-hMN" firstAttribute="height" secondItem="40c-su-48p" secondAttribute="height" id="x4Z-Xr-2Fr"/>
@@ -216,10 +337,18 @@
                                 <exclude reference="pAK-ua-gPr"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="xHm-xa-9GM"/>
+                                <exclude reference="oaw-Yc-O0P"/>
+                                <exclude reference="wGE-oH-kNi"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="5bZ-Gi-zAJ" appends="YES" id="Uul-cS-Eeh"/>
                         </connections>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="settingsTab" destination="BaG-Lm-vVl" id="Kua-0j-dJz"/>
                         <outletCollection property="tiles" destination="DzO-TI-VQP" collectionClass="NSMutableArray" id="DlZ-0m-Oiw"/>
@@ -245,12 +374,12 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="319.921875" y="324.59736456808196"/>
+            <point key="canvasLocation" x="298" y="239"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="NX1-Lp-DFI">
             <objects>
-                <viewController id="4KR-Hp-OAN" customClass="SettingsViewController" customModule="AudioEngine2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4KR-Hp-OAN" customClass="SettingsViewController" customModule="PaulaSynth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v0h-ap-L21"/>
                         <viewControllerLayoutGuide type="bottom" id="n4w-iM-cSV"/>
@@ -266,14 +395,14 @@
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="agV-er-bVB">
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="y6f-NC-gMa"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="y6f-NC-gMa"/>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-xD-Hg5" userLabel="Sound">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArH-2T-Mmf">
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="79" id="wQM-rb-uNr"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -281,7 +410,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="64" id="cYf-NZ-ft7"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                             <state key="normal" title="&gt;">
                                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             </state>
@@ -290,7 +419,7 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fze-7y-RR7">
-                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -319,7 +448,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="68" id="LYV-re-yCm"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -336,7 +465,7 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor Pentatonic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr9-DF-1Bh">
-                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -361,7 +490,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGK-Fy-xkw" userLabel="LowNote">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJC-16-Xaj">
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -376,7 +505,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="52" id="Epl-HI-FNh"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -400,7 +529,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfK-bQ-Qdv" userLabel="Polyphony">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ployphony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIc-NF-mTI">
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -414,7 +543,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="48" id="G6i-Q8-l2B"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -439,7 +568,7 @@
                                                 <constraint firstAttribute="height" constant="352" id="5qh-jb-5gt"/>
                                                 <constraint firstItem="PWH-bT-Qfd" firstAttribute="height" secondItem="IFn-xD-Hg5" secondAttribute="height" id="UQ8-fp-0jU"/>
                                                 <constraint firstItem="SGK-Fy-xkw" firstAttribute="height" secondItem="PWH-bT-Qfd" secondAttribute="height" id="hWO-Lu-Fze"/>
-                                                <constraint firstItem="PWH-bT-Qfd" firstAttribute="height" secondItem="y6f-NC-gMa" secondAttribute="height" id="p73-7W-XTk"/>
+                                                <constraint firstItem="PWH-bT-Qfd" firstAttribute="height" secondItem="y6f-NC-gMa" secondAttribute="height" multiplier="0.75" id="p73-7W-XTk"/>
                                                 <constraint firstItem="zfK-bQ-Qdv" firstAttribute="height" secondItem="PWH-bT-Qfd" secondAttribute="height" id="sm6-2v-Vfg"/>
                                             </constraints>
                                         </stackView>
@@ -563,6 +692,7 @@
                             <constraint firstItem="n4w-iM-cSV" firstAttribute="top" secondItem="hTu-iD-irN" secondAttribute="bottom" id="c1K-V4-L6F"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="lowNoteLabel" destination="Ml8-hz-q7K" id="Clr-bq-vQj"/>
                         <outlet property="lowNoteSlider" destination="HAR-jA-A0l" id="Tgr-wn-AUq"/>
@@ -588,7 +718,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1104.8" y="323.38830584707648"/>
+            <point key="canvasLocation" x="1160.8" y="238.83058470764618"/>
         </scene>
     </scenes>
     <resources>
