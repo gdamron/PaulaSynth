@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var viewActive = true
     
     let onAlpha: CGFloat = 1.0
-    let offAlpha: CGFloat = 0.75
+    let offAlpha: CGFloat = 0.5
     let animDur: TimeInterval = 0.2
     let animDamp: CGFloat = 0.9
     let animVel: CGFloat = 0.1
