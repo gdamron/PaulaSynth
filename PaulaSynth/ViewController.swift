@@ -53,6 +53,7 @@ class ViewController: UIViewController {
         waveform = settings.sound
         synth = Synthesizer(sound: waveform, isPoly: true)
         notes = settings.scale.notes
+        touched = [UITouch?](repeating: nil, count: tiles.count)
         polyphonyOn = settings.polyphonyOn
         Synthesizer.start()
     }
@@ -105,8 +106,9 @@ class ViewController: UIViewController {
     
     func noteOn(_ v: UIView, touch: UITouch) {
         if touched[v.tag] == nil {
-            let index = v.tag % notes.count * ( v.tag / notes.count + 1)
-            synth.noteOn(note: notes[index])
+            let index = v.tag % notes.count
+            let octave = 12 * (v.tag / notes.count)
+            synth.noteOn(note: notes[index] + octave)
             touched[v.tag] = touch
             v.alpha = onAlpha
         }
@@ -114,8 +116,9 @@ class ViewController: UIViewController {
     
     func noteOff(_ v: UIView) {
         if touched[v.tag] != nil {
-            let index = v.tag % notes.count * ( v.tag / notes.count + 1)
-            synth.noteOff(note: notes[index])
+            let index = v.tag % notes.count
+            let octave = 12 * (v.tag / notes.count)
+            synth.noteOff(note: notes[index] + octave)
             touched[v.tag] = nil
             v.alpha = offAlpha
         }

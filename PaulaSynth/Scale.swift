@@ -24,15 +24,15 @@ enum Scale: String {
         
         switch self {
             
-        case .MinorPentatonic: scale = [0, 2, 5, 7, 9, 12, 14, 17]
-        case .MajorPentatonic: scale = [0, 2, 4, 7, 9, 12, 14, 16]
-        case .Blues: scale = [0, 2, 5, 7, 8, 9, 12, 14]
-        case .Major: scale = [0, 2, 4, 5, 7, 9, 11, 12]
-        case .Minor: scale = [0, 2, 3, 5, 7, 8, 10, 12]
-        case .Dorian: scale = [0, 2, 3, 5, 7, 9, 10, 12]
-        case .Mixolydian: scale = [0, 2, 4, 5, 7, 9, 10, 12]
-        case .Phrygian: scale = [0, 1, 3, 5, 7, 8, 10, 12]
-        case .Lydian: scale = [0, 2, 4, 6, 7, 9, 11, 12]
+        case .MinorPentatonic: scale = [0, 2, 5, 7, 9]
+        case .MajorPentatonic: scale = [0, 2, 4, 7, 9]
+        case .Blues: scale = [0, 2, 5, 7, 8, 9]
+        case .Major: scale = [0, 2, 4, 5, 7, 9, 11]
+        case .Minor: scale = [0, 2, 3, 5, 7, 8, 10]
+        case .Dorian: scale = [0, 2, 3, 5, 7, 9, 10]
+        case .Mixolydian: scale = [0, 2, 4, 5, 7, 9, 10]
+        case .Phrygian: scale = [0, 1, 3, 5, 7, 8, 10]
+        case .Lydian: scale = [0, 2, 4, 6, 7, 9, 11]
             
         }
         
