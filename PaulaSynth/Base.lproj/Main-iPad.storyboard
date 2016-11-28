@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,183 +19,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.80000000000000004" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-TI-VQP" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="384" height="256"/>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S02-dx-Duh" userLabel="Tile View 0" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="576" width="256" height="192"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="KG6-hl-au4"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="1" green="0.24274647099999999" blue="0.23943073149999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="KG6-hl-au4"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view alpha="0.80000000000000004" tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40c-su-48p" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="384" y="0.0" width="384" height="256"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.79499155980000002" green="0.51987495849999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.80000000000000004" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzT-83-UeA" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="256" width="384" height="256"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="FgM-Cv-8Fa"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.3165055477" green="0.90817039109999997" blue="0.26441010209999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="FgM-Cv-8Fa"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view alpha="0.80000000000000004" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-0a-hMN" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="384" y="256" width="384" height="256"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.80000000000000004" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rf-RK-PcO" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="512" width="384" height="256"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="CzF-bG-tiR"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.62579320429999996" green="0.75877951170000002" blue="0.82633341169999996" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="CzF-bG-tiR"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view alpha="0.80000000000000004" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-gS-8D4" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="384" y="512" width="384" height="256"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="1" green="0.72305650720630155" blue="0.17760401061720676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S02-dx-Duh" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="768" width="384" height="256"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="STp-oS-gIG"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
@@ -216,14 +45,57 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="STp-oS-gIG"/>
-                                    </mask>
-                                </variation>
                             </view>
-                            <view alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW6-j2-gqz" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
-                                <rect key="frame" x="384" y="768" width="384" height="256"/>
+                            <view alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW6-j2-gqz" userLabel="Tile View 1" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="256" y="576" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.34850899219999998" green="1" blue="0.2911459179" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jav-5A-mjR" userLabel="Tile View 2" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="512" y="576" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.95153806100000005" green="1" blue="0.34886616079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI3-EE-exr" userLabel="Tile View 3" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="768" y="576" width="256" height="192"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -246,8 +118,296 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view alpha="0.80000000000000004" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rf-RK-PcO" userLabel="Tile View 4" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="384" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.62579320429999996" green="0.75877951170000002" blue="0.82633341169999996" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000000000000004" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-gS-8D4" userLabel="Tile View 5" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="256" y="384" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.72305650720630155" blue="0.17760401061720676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFe-8E-vAU" userLabel="Tile View 6" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="512" y="384" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.62579320429999996" green="0.75877951170000002" blue="0.82633341169999996" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0f9-dn-RuU" userLabel="Tile View 7" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="768" y="384" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.72305650720000003" blue="0.1776040106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000000000000004" tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzT-83-UeA" userLabel="Tile View 8" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="192" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.3165055477" green="0.90817039109999997" blue="0.26441010209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000000000000004" tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-0a-hMN" userLabel="Tile View 9" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="256" y="192" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-hG-Twf" userLabel="Tile View 10" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="512" y="192" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.3165055477" green="0.90817039109999997" blue="0.26441010209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvr-dd-nBt" userLabel="Tile View 11" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="768" y="192" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000000000000004" tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-TI-VQP" userLabel="Tile View 12" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.24274647099999999" blue="0.23943073149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000000000000004" tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40c-su-48p" userLabel="Tile View 13" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="256" y="0.0" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.79499155980000002" green="0.51987495849999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-ua-ZXo" userLabel="Tile View 14" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="512" y="0.0" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.24274647099999999" blue="0.23943073149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.80000001192092896" tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukw-Sm-yb5" userLabel="Tile View 15" customClass="TileView" customModule="PaulaSynth" customModuleProvider="target">
+                                <rect key="frame" x="768" y="0.0" width="256" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.79499155980000002" green="0.51987495849999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leading">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottom">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-Lm-vVl">
-                                <rect key="frame" x="-8" y="448" width="72" height="128"/>
+                                <rect key="frame" x="-8" y="320" width="72" height="128"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3Q-DI-MFb">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="128"/>
@@ -303,62 +463,81 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="zW6-j2-gqz" firstAttribute="leading" secondItem="S02-dx-Duh" secondAttribute="trailing" id="0vG-Vf-n3X"/>
-                            <constraint firstItem="hzT-83-UeA" firstAttribute="top" secondItem="DzO-TI-VQP" secondAttribute="bottom" id="1PM-Ex-bU9"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="top" secondItem="40c-su-48p" secondAttribute="bottom" id="3hK-DA-Hq0"/>
-                            <constraint firstItem="S02-dx-Duh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ajs-mw-vDe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zW6-j2-gqz" secondAttribute="bottom" id="CaW-3X-rBY"/>
-                            <constraint firstItem="S02-dx-Duh" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="D75-lg-0Ww"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S02-dx-Duh" secondAttribute="bottom" id="E5p-8i-mgR"/>
-                            <constraint firstItem="c5X-gS-8D4" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="Fkh-js-c9p"/>
-                            <constraint firstItem="c5X-gS-8D4" firstAttribute="top" secondItem="dHa-0a-hMN" secondAttribute="bottom" id="FtZ-L3-MyT"/>
-                            <constraint firstItem="hzT-83-UeA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K83-S7-hko"/>
-                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="top" secondItem="hzT-83-UeA" secondAttribute="bottom" id="MDK-fv-Nae"/>
-                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="NrD-te-UI7"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="width" secondItem="40c-su-48p" secondAttribute="width" id="Stv-kG-sfN"/>
-                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="UpE-cI-Vv9"/>
+                            <constraint firstItem="S02-dx-Duh" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="1oz-9s-Lvl"/>
+                            <constraint firstAttribute="trailing" secondItem="dvr-dd-nBt" secondAttribute="trailing" id="2S3-EH-7fi"/>
+                            <constraint firstItem="S02-dx-Duh" firstAttribute="top" secondItem="7Rf-RK-PcO" secondAttribute="bottom" id="3nl-ld-FEh"/>
+                            <constraint firstItem="0f9-dn-RuU" firstAttribute="leading" secondItem="MFe-8E-vAU" secondAttribute="trailing" id="479-GK-W2S"/>
+                            <constraint firstItem="KI3-EE-exr" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="4Di-0z-x7V"/>
+                            <constraint firstItem="zW6-j2-gqz" firstAttribute="leading" secondItem="S02-dx-Duh" secondAttribute="trailing" id="4bw-od-f4I"/>
+                            <constraint firstItem="40c-su-48p" firstAttribute="leading" secondItem="DzO-TI-VQP" secondAttribute="trailing" id="4hm-S7-ixG"/>
+                            <constraint firstItem="Ukw-Sm-yb5" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="4qM-mS-xV4"/>
+                            <constraint firstItem="MFe-8E-vAU" firstAttribute="top" secondItem="8KW-hG-Twf" secondAttribute="bottom" id="5OQ-19-UOO"/>
+                            <constraint firstItem="S02-dx-Duh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Nh-Kt-wTm"/>
+                            <constraint firstItem="8KW-hG-Twf" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="7VR-sa-AOI"/>
+                            <constraint firstItem="Ukw-Sm-yb5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8hw-Je-Zze"/>
+                            <constraint firstItem="S02-dx-Duh" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="9ZM-N3-ojC"/>
+                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="9ux-Rb-vPj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KI3-EE-exr" secondAttribute="bottom" id="A9w-tC-ozN"/>
+                            <constraint firstItem="KI3-EE-exr" firstAttribute="top" secondItem="0f9-dn-RuU" secondAttribute="bottom" id="AlD-Ad-gY7"/>
+                            <constraint firstItem="40c-su-48p" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="BC7-fm-PkA"/>
+                            <constraint firstItem="0f9-dn-RuU" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="BKd-4S-cfi"/>
+                            <constraint firstItem="dHa-0a-hMN" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="Bzb-yp-y74"/>
+                            <constraint firstItem="hzT-83-UeA" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="CZg-fQ-XVc"/>
+                            <constraint firstItem="dvr-dd-nBt" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="CqI-bY-Upw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ukw-Sm-yb5" secondAttribute="trailing" id="DlG-JC-9mS"/>
+                            <constraint firstItem="jav-5A-mjR" firstAttribute="top" secondItem="MFe-8E-vAU" secondAttribute="bottom" id="Dn5-pL-RjV"/>
+                            <constraint firstItem="Ukw-Sm-yb5" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="DyM-3u-xdh"/>
+                            <constraint firstItem="40c-su-48p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EOy-XP-FwZ"/>
+                            <constraint firstItem="c5X-gS-8D4" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="Ero-l5-B37"/>
+                            <constraint firstItem="I1d-ua-ZXo" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="FWG-3P-G1q"/>
+                            <constraint firstItem="hzT-83-UeA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HMS-xR-S4r"/>
+                            <constraint firstItem="c5X-gS-8D4" firstAttribute="top" secondItem="dHa-0a-hMN" secondAttribute="bottom" id="IIr-2D-hRY"/>
+                            <constraint firstAttribute="trailing" secondItem="KI3-EE-exr" secondAttribute="trailing" id="J85-a0-ssA"/>
+                            <constraint firstItem="8KW-hG-Twf" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="Jlx-E9-Rvn"/>
+                            <constraint firstItem="zW6-j2-gqz" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="JvO-QD-xTf"/>
+                            <constraint firstAttribute="trailing" secondItem="0f9-dn-RuU" secondAttribute="trailing" id="KeA-3q-q8T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jav-5A-mjR" secondAttribute="bottom" id="Lno-DM-Wcc"/>
+                            <constraint firstItem="8KW-hG-Twf" firstAttribute="leading" secondItem="dHa-0a-hMN" secondAttribute="trailing" id="Lon-22-80p"/>
+                            <constraint firstItem="KI3-EE-exr" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="Mm2-Dh-nJQ"/>
+                            <constraint firstItem="I1d-ua-ZXo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NE5-LZ-VCE"/>
+                            <constraint firstItem="jav-5A-mjR" firstAttribute="leading" secondItem="zW6-j2-gqz" secondAttribute="trailing" id="Nid-z9-tI0"/>
+                            <constraint firstItem="c5X-gS-8D4" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="OFd-oY-l7o"/>
+                            <constraint firstItem="c5X-gS-8D4" firstAttribute="leading" secondItem="7Rf-RK-PcO" secondAttribute="trailing" id="OjW-xJ-T4N"/>
+                            <constraint firstItem="MFe-8E-vAU" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="Ota-iu-jJg"/>
+                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="top" secondItem="hzT-83-UeA" secondAttribute="bottom" id="PGc-Ss-bbZ"/>
+                            <constraint firstItem="dHa-0a-hMN" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="S0p-eM-sSy"/>
+                            <constraint firstItem="dvr-dd-nBt" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="T8f-lM-BeN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S02-dx-Duh" secondAttribute="bottom" id="UDp-xO-kF3"/>
+                            <constraint firstItem="DzO-TI-VQP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WEs-Qo-G5W"/>
+                            <constraint firstItem="dHa-0a-hMN" firstAttribute="leading" secondItem="hzT-83-UeA" secondAttribute="trailing" id="WdB-qm-h0A"/>
+                            <constraint firstItem="zW6-j2-gqz" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="Wk9-nx-4nz"/>
+                            <constraint firstItem="dHa-0a-hMN" firstAttribute="top" secondItem="40c-su-48p" secondAttribute="bottom" id="WyD-YW-Uzj"/>
+                            <constraint firstItem="8KW-hG-Twf" firstAttribute="top" secondItem="I1d-ua-ZXo" secondAttribute="bottom" id="X0R-W5-iS3"/>
                             <constraint firstItem="BaG-Lm-vVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-8" id="Xfq-cJ-vbW"/>
-                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZdS-oI-MuT"/>
-                            <constraint firstItem="hzT-83-UeA" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="ZyX-l2-bdq"/>
-                            <constraint firstItem="zW6-j2-gqz" firstAttribute="top" secondItem="c5X-gS-8D4" secondAttribute="bottom" id="a62-J0-xdb"/>
-                            <constraint firstItem="c5X-gS-8D4" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="bpj-d7-9zH"/>
-                            <constraint firstItem="hzT-83-UeA" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="bqW-YK-2k9"/>
-                            <constraint firstItem="S02-dx-Duh" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="cwo-pb-VnT"/>
-                            <constraint firstItem="zW6-j2-gqz" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="dZd-TA-DUx"/>
-                            <constraint firstItem="zW6-j2-gqz" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="f2l-3G-Hi4"/>
-                            <constraint firstItem="DzO-TI-VQP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fts-gB-fvr"/>
-                            <constraint firstItem="40c-su-48p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gQo-Bx-66a"/>
-                            <constraint firstAttribute="trailing" secondItem="zW6-j2-gqz" secondAttribute="trailing" id="h9u-kE-rjl"/>
-                            <constraint firstItem="c5X-gS-8D4" firstAttribute="leading" secondItem="7Rf-RK-PcO" secondAttribute="trailing" id="iB6-lB-z5N"/>
-                            <constraint firstItem="40c-su-48p" firstAttribute="leading" secondItem="DzO-TI-VQP" secondAttribute="trailing" id="iEh-3f-167"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="leading" secondItem="hzT-83-UeA" secondAttribute="trailing" constant="2" id="isf-mD-rN4"/>
+                            <constraint firstItem="DzO-TI-VQP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ydc-j6-1pf"/>
+                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zh6-77-WCd"/>
+                            <constraint firstItem="jav-5A-mjR" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="aZ4-7F-rXW"/>
+                            <constraint firstItem="dvr-dd-nBt" firstAttribute="leading" secondItem="8KW-hG-Twf" secondAttribute="trailing" id="auE-jJ-arv"/>
+                            <constraint firstItem="KI3-EE-exr" firstAttribute="leading" secondItem="jav-5A-mjR" secondAttribute="trailing" id="bq2-wb-X6M"/>
+                            <constraint firstItem="dvr-dd-nBt" firstAttribute="top" secondItem="Ukw-Sm-yb5" secondAttribute="bottom" id="cGw-qS-eM1"/>
+                            <constraint firstItem="DzO-TI-VQP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="cl1-5B-gO7"/>
+                            <constraint firstItem="I1d-ua-ZXo" firstAttribute="leading" secondItem="40c-su-48p" secondAttribute="trailing" id="di0-ki-KdG"/>
+                            <constraint firstItem="MFe-8E-vAU" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="eTD-Sf-MER"/>
+                            <constraint firstItem="7Rf-RK-PcO" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="fa1-4p-HIH"/>
+                            <constraint firstItem="MFe-8E-vAU" firstAttribute="leading" secondItem="c5X-gS-8D4" secondAttribute="trailing" id="kN0-bc-Yyh"/>
                             <constraint firstItem="BaG-Lm-vVl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kYJ-mC-ZvW"/>
-                            <constraint firstItem="DzO-TI-VQP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="myq-rD-fTY"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="height" secondItem="hzT-83-UeA" secondAttribute="height" id="oL0-Iq-bHI"/>
-                            <constraint firstAttribute="trailing" secondItem="c5X-gS-8D4" secondAttribute="trailing" id="oaw-Yc-O0P"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="width" secondItem="hzT-83-UeA" secondAttribute="width" id="pAK-ua-gPr"/>
-                            <constraint firstItem="40c-su-48p" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="pAi-In-A5I"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="leading" secondItem="hzT-83-UeA" secondAttribute="trailing" id="qfv-E6-iHM"/>
-                            <constraint firstItem="S02-dx-Duh" firstAttribute="top" secondItem="7Rf-RK-PcO" secondAttribute="bottom" id="vU5-Fn-P1D"/>
-                            <constraint firstAttribute="trailing" secondItem="dHa-0a-hMN" secondAttribute="trailing" id="wGE-oH-kNi"/>
-                            <constraint firstItem="40c-su-48p" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="x3y-YG-whS"/>
-                            <constraint firstItem="dHa-0a-hMN" firstAttribute="height" secondItem="40c-su-48p" secondAttribute="height" id="x4Z-Xr-2Fr"/>
-                            <constraint firstAttribute="trailing" secondItem="40c-su-48p" secondAttribute="trailing" id="xHm-xa-9GM"/>
+                            <constraint firstItem="zW6-j2-gqz" firstAttribute="top" secondItem="c5X-gS-8D4" secondAttribute="bottom" id="lxr-XA-MMF"/>
+                            <constraint firstItem="jav-5A-mjR" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="np5-nm-G1g"/>
+                            <constraint firstItem="0f9-dn-RuU" firstAttribute="top" secondItem="dvr-dd-nBt" secondAttribute="bottom" id="oPV-fE-xKn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zW6-j2-gqz" secondAttribute="bottom" id="p5G-vu-dIu"/>
+                            <constraint firstItem="DzO-TI-VQP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="rdV-5P-GZB"/>
+                            <constraint firstItem="Ukw-Sm-yb5" firstAttribute="leading" secondItem="I1d-ua-ZXo" secondAttribute="trailing" id="svL-a3-JyU"/>
+                            <constraint firstItem="hzT-83-UeA" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="vGP-k3-0Ff"/>
+                            <constraint firstItem="I1d-ua-ZXo" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="vaA-we-Nfd"/>
+                            <constraint firstItem="hzT-83-UeA" firstAttribute="top" secondItem="DzO-TI-VQP" secondAttribute="bottom" id="xJP-YC-Ukz"/>
+                            <constraint firstItem="0f9-dn-RuU" firstAttribute="width" secondItem="DzO-TI-VQP" secondAttribute="width" id="ydD-Ys-g1j"/>
+                            <constraint firstItem="40c-su-48p" firstAttribute="height" secondItem="DzO-TI-VQP" secondAttribute="height" id="zUT-xn-ipr"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="isf-mD-rN4"/>
-                                <exclude reference="oL0-Iq-bHI"/>
-                                <exclude reference="pAK-ua-gPr"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="constraints">
-                                <exclude reference="xHm-xa-9GM"/>
-                                <exclude reference="oaw-Yc-O0P"/>
-                                <exclude reference="wGE-oH-kNi"/>
-                            </mask>
-                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="5bZ-Gi-zAJ" appends="YES" id="Uul-cS-Eeh"/>
                         </connections>
@@ -374,6 +553,14 @@
                         <outletCollection property="tiles" destination="c5X-gS-8D4" collectionClass="NSMutableArray" id="cQm-PW-BLh"/>
                         <outletCollection property="tiles" destination="S02-dx-Duh" collectionClass="NSMutableArray" id="q3d-ig-41T"/>
                         <outletCollection property="tiles" destination="zW6-j2-gqz" collectionClass="NSMutableArray" id="Dga-yi-pMi"/>
+                        <outletCollection property="tiles" destination="0f9-dn-RuU" collectionClass="NSMutableArray" id="cHc-ht-f9J"/>
+                        <outletCollection property="tiles" destination="I1d-ua-ZXo" collectionClass="NSMutableArray" id="5W0-bO-foT"/>
+                        <outletCollection property="tiles" destination="Ukw-Sm-yb5" collectionClass="NSMutableArray" id="YpV-Y9-Z3c"/>
+                        <outletCollection property="tiles" destination="8KW-hG-Twf" collectionClass="NSMutableArray" id="yq1-aa-Mqo"/>
+                        <outletCollection property="tiles" destination="dvr-dd-nBt" collectionClass="NSMutableArray" id="wZs-nv-pKy"/>
+                        <outletCollection property="tiles" destination="MFe-8E-vAU" collectionClass="NSMutableArray" id="k97-9g-kGH"/>
+                        <outletCollection property="tiles" destination="jav-5A-mjR" collectionClass="NSMutableArray" id="aLc-93-LAr"/>
+                        <outletCollection property="tiles" destination="KI3-EE-exr" collectionClass="NSMutableArray" id="jn7-eN-fab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -400,23 +587,23 @@
                         <viewControllerLayoutGuide type="bottom" id="n4w-iM-cSV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GQT-94-oQi">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTu-iD-irN">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DDA-EN-Mqi" userLabel="Settings">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="agV-er-bVB">
-                                            <rect key="frame" x="8" y="284.5" width="752" height="352"/>
+                                            <rect key="frame" x="205" y="169.5" width="614" height="352"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="y6f-NC-gMa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="752" height="80"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="614" height="80"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-xD-Hg5" userLabel="Sound">
-                                                    <rect key="frame" x="0.0" y="88" width="752" height="60"/>
+                                                    <rect key="frame" x="0.0" y="88" width="614" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArH-2T-Mmf">
                                                             <rect key="frame" x="8" y="17" width="79" height="26.5"/>
@@ -428,13 +615,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fze-7y-RR7">
-                                                            <rect key="frame" x="99" y="17" width="577" height="26.5"/>
+                                                            <rect key="frame" x="99" y="17" width="439" height="26.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgu-3N-Srj">
-                                                            <rect key="frame" x="688" y="0.0" width="64" height="60"/>
+                                                            <rect key="frame" x="550" y="0.0" width="64" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="64" id="1vF-xK-ks9"/>
                                                             </constraints>
@@ -443,7 +630,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz1-Xg-F1R">
-                                                            <rect key="frame" x="0.0" y="0.0" width="752" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="614" height="60"/>
                                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                             <state key="normal">
                                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -476,7 +663,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWH-bT-Qfd" userLabel="Scale">
-                                                    <rect key="frame" x="0.0" y="156" width="752" height="60"/>
+                                                    <rect key="frame" x="0.0" y="156" width="614" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-9q-i5f">
                                                             <rect key="frame" x="8" y="17" width="68" height="26.5"/>
@@ -488,13 +675,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor Pentatonic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr9-DF-1Bh">
-                                                            <rect key="frame" x="88" y="17" width="588" height="26.5"/>
+                                                            <rect key="frame" x="88" y="17" width="450" height="26.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-NP-pGh">
-                                                            <rect key="frame" x="688" y="0.0" width="64" height="60"/>
+                                                            <rect key="frame" x="550" y="0.0" width="64" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="64" id="hRq-Vv-S2r"/>
                                                             </constraints>
@@ -503,7 +690,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v7-84-bFo">
-                                                            <rect key="frame" x="0.0" y="0.0" width="752" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="614" height="60"/>
                                                             <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                             <state key="normal">
                                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -535,7 +722,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGK-Fy-xkw" userLabel="LowNote">
-                                                    <rect key="frame" x="0.0" y="224" width="752" height="60"/>
+                                                    <rect key="frame" x="0.0" y="224" width="614" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJC-16-Xaj">
                                                             <rect key="frame" x="8" y="17" width="104.5" height="26.5"/>
@@ -544,7 +731,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="21" maxValue="93" translatesAutoresizingMaskIntoConstraints="NO" id="HAR-jA-A0l">
-                                                            <rect key="frame" x="182.5" y="14.5" width="563.5" height="31"/>
+                                                            <rect key="frame" x="182.5" y="14.5" width="425.5" height="31"/>
                                                             <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <connections>
@@ -578,7 +765,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfK-bQ-Qdv" userLabel="Polyphony">
-                                                    <rect key="frame" x="0.0" y="292" width="752" height="60"/>
+                                                    <rect key="frame" x="0.0" y="292" width="614" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ployphony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIc-NF-mTI">
                                                             <rect key="frame" x="8" y="17" width="120" height="26.5"/>
@@ -587,7 +774,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QQY-Oz-XMS">
-                                                            <rect key="frame" x="695" y="14.5" width="51" height="31"/>
+                                                            <rect key="frame" x="557" y="14.5" width="51" height="31"/>
                                                             <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <connections>
                                                                 <action selector="polyphonySwitched:" destination="4KR-Hp-OAN" eventType="valueChanged" id="5gt-z6-6gz"/>
@@ -628,7 +815,7 @@
                                             </constraints>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKI-CF-2wP">
-                                            <rect key="frame" x="320" y="952" width="128" height="64"/>
+                                            <rect key="frame" x="448" y="696" width="128" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="128" id="Qhs-G6-BpW"/>
                                                 <constraint firstAttribute="height" constant="64" id="dYa-Cb-92K"/>
@@ -642,13 +829,13 @@
                                             </connections>
                                         </button>
                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHI-iB-d1M" userLabel="Picker">
-                                            <rect key="frame" x="8" y="760" width="752" height="256"/>
+                                            <rect key="frame" x="205" y="504" width="614" height="256"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KjQ-GN-dqC">
-                                                    <rect key="frame" x="0.0" y="56" width="752" height="200"/>
+                                                    <rect key="frame" x="0.0" y="56" width="614" height="200"/>
                                                     <subviews>
                                                         <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPL-hY-SBa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="752" height="200"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="614" height="200"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="9"/>
@@ -674,10 +861,10 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLG-2K-JMh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="752" height="48"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="614" height="48"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-mZ-frV">
-                                                            <rect key="frame" x="696" y="0.0" width="48" height="48"/>
+                                                            <rect key="frame" x="558" y="0.0" width="48" height="48"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <state key="normal" title="Done"/>
                                                             <connections>
@@ -729,14 +916,13 @@
                                     </subviews>
                                     <gestureRecognizers/>
                                     <constraints>
+                                        <constraint firstItem="eHI-iB-d1M" firstAttribute="width" secondItem="agV-er-bVB" secondAttribute="width" id="2al-EN-Opv"/>
                                         <constraint firstAttribute="bottom" secondItem="eHI-iB-d1M" secondAttribute="bottom" constant="8" id="5Qi-2w-my5"/>
                                         <constraint firstItem="uKI-CF-2wP" firstAttribute="centerX" secondItem="DDA-EN-Mqi" secondAttribute="centerX" id="ABq-nh-PIk"/>
-                                        <constraint firstItem="agV-er-bVB" firstAttribute="trailing" secondItem="DDA-EN-Mqi" secondAttribute="trailingMargin" id="Fwk-O5-2gz"/>
+                                        <constraint firstItem="eHI-iB-d1M" firstAttribute="centerX" secondItem="DDA-EN-Mqi" secondAttribute="centerX" id="DH9-kE-2kQ"/>
                                         <constraint firstItem="agV-er-bVB" firstAttribute="centerY" secondItem="DDA-EN-Mqi" secondAttribute="centerY" multiplier="0.9" id="GmS-Ta-eRm"/>
-                                        <constraint firstItem="agV-er-bVB" firstAttribute="leading" secondItem="DDA-EN-Mqi" secondAttribute="leadingMargin" id="HV6-Rm-RcV"/>
-                                        <constraint firstItem="eHI-iB-d1M" firstAttribute="leading" secondItem="DDA-EN-Mqi" secondAttribute="leading" constant="8" id="NAs-sd-tNB"/>
                                         <constraint firstItem="agV-er-bVB" firstAttribute="centerX" secondItem="DDA-EN-Mqi" secondAttribute="centerX" id="ZeI-TM-93L"/>
-                                        <constraint firstAttribute="trailing" secondItem="eHI-iB-d1M" secondAttribute="trailing" constant="8" id="fcd-Iw-Ui2"/>
+                                        <constraint firstItem="agV-er-bVB" firstAttribute="width" secondItem="DDA-EN-Mqi" secondAttribute="width" multiplier="0.6" id="l4j-mZ-7AZ"/>
                                         <constraint firstItem="uKI-CF-2wP" firstAttribute="bottom" secondItem="DDA-EN-Mqi" secondAttribute="bottomMargin" id="q8V-Es-RyP"/>
                                     </constraints>
                                     <connections>
