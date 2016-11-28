@@ -32,7 +32,7 @@ class UserSettings: NSObject {
             dirty = true
         }
     }
-    var scale = Scale.MinorPentatonic {
+    var scale = Scale.Blues {
         didSet {
             dirty = true
         }

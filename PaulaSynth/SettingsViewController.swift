@@ -15,7 +15,7 @@ enum PickerType {
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     var pickerType = PickerType.Scale
-    var selectedScale = Scale.MinorPentatonic.rawValue
+    var selectedScale = Scale.Blues.rawValue
     var selectedSound = SynthSound.Square.name
     
     @IBOutlet var tiles: [UIView]!

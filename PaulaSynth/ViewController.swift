@@ -8,14 +8,13 @@
 
 import UIKit
 import AVFoundation
-import AudioKit
 
 class ViewController: UIViewController {
     var ignoreTouches = false
     var touched = [UITouch?](repeating: nil, count: 8)
     var touchStack:[MetaTouch] = []
     var waveform = SynthSound.Square
-    var notes = Scale.MinorPentatonic.notes
+    var notes = Scale.Blues.notes
     var synth = Synthesizer(sound: .Square, isPoly: true)
     let transitionManager = TransitionManager()
     var polyphonyOn = true
@@ -60,7 +59,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        AudioKit.start()
+        Synthesizer.start()
         if UserSettings.sharedInstance.hideSettingsTab {
             dismissSettingsTab(self)
         }

@@ -17,7 +17,9 @@ enum Scale: String {
     Dorian = "Dorian",
     Mixolydian = "Mixolydian",
     Phrygian = "Phyrgian",
-    Lydian = "Lydian"
+    Lydian = "Lydian",
+    HarmonicMinor = "Harmonic Minor",
+    MelodicMidnor = "Melodic Minor"
     
     var notes: [Int] {
         var scale:[Int]
@@ -33,6 +35,8 @@ enum Scale: String {
         case .Mixolydian: scale = [0, 2, 4, 5, 7, 9, 10]
         case .Phrygian: scale = [0, 1, 3, 5, 7, 8, 10]
         case .Lydian: scale = [0, 2, 4, 6, 7, 9, 11]
+        case .HarmonicMinor: scale = [0, 2, 3, 5, 7, 8, 11]
+        case .MelodicMidnor: scale = [0, 2, 3, 5, 7, 9, 11]
             
         }
         
@@ -49,7 +53,9 @@ enum Scale: String {
             Scale.Dorian.rawValue,
             Scale.Mixolydian.rawValue,
             Scale.Phrygian.rawValue,
-            Scale.Lydian.rawValue
+            Scale.Lydian.rawValue,
+            Scale.HarmonicMinor.rawValue,
+            Scale.MelodicMidnor.rawValue
         ]
     }
 }
