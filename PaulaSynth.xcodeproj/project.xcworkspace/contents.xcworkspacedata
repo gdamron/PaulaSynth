@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/grant/Documents/Code/AudioEngine2/PaulaSynth.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

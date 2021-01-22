@@ -38,7 +38,7 @@ enum SynthSound: String {
         }
     }
     
-    var velocity: Int {
+    var velocity: UInt8 {
         switch self {
         case .Square: return 64
         case .Triangle: return 96

@@ -21,8 +21,8 @@ enum Scale: String {
     HarmonicMinor = "Harmonic Minor",
     MelodicMidnor = "Melodic Minor"
     
-    var notes: [Int] {
-        var scale:[Int]
+    var notes: [UInt8] {
+        var scale:[UInt8]
         
         switch self {
             
@@ -40,7 +40,7 @@ enum Scale: String {
             
         }
         
-        return scale.map {$0 + UserSettings.sharedInstance.lowNote}
+        return scale.map {$0 + UInt8(UserSettings.sharedInstance.lowNote)}
     }
     
     static var list: [String] {

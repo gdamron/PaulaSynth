@@ -60,7 +60,7 @@ class TileView: UIView {
     func setup() {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: "TileView", bundle: bundle)
-        view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        view = (nib.instantiate(withOwner: self, options: nil)[0] as! UIView)
         
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]

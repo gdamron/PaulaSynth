@@ -8,18 +8,17 @@
 
 import UIKit
 import AudioKit
-
 class Synthesizer: NSObject {
     
     fileprivate var synth: AKPolyphonicNode!
     fileprivate var sound = SynthSound.Square
     
-    static func start() {
-        AudioKit.start()
+    static func start() throws {
+        try AKManager.start()
     }
     
-    static func stop() {
-        AudioKit.stop()
+    static func stop() throws {
+        try AKManager.stop()
     }
     
     init(sound: SynthSound, isPoly: Bool) {
@@ -36,8 +35,9 @@ class Synthesizer: NSObject {
                                        decayDuration: 1.5,
                                        sustainLevel: 0.6,
                                        releaseDuration: 0.25,
-                                       detuningOffset: 0,
-                                       detuningMultiplier: 1)
+                                       pitchBend: 0,
+                                       vibratoDepth: 0,
+                                       vibratoRate: 0)
         case .Sine:
             synth = AKOscillatorBank(waveform: AKTable(.sine))
         case .Square:
@@ -50,18 +50,19 @@ class Synthesizer: NSObject {
                                         decayDuration: 0.75,
                                         sustainLevel: 0.8,
                                         releaseDuration: 0.2,
-                                        detuningOffset: 0,
-                                        detuningMultiplier: 1)
+                                        pitchBend: 0,
+                                        vibratoDepth: 0,
+                                        vibratoRate: 0)
         }
         
-        AudioKit.output = synth
+        AKManager.output = synth
     }
     
-    func noteOn(note: Int) {
+    func noteOn(note: UInt8) {
         synth.play(noteNumber: note, velocity: sound.velocity)
     }
     
-    func noteOff(note: Int) {
+    func noteOff(note: UInt8) {
         synth.stop(noteNumber: note)
     }
 }

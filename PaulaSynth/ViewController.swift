@@ -11,17 +11,12 @@ import AVFoundation
 
 class ViewController: UIViewController {
     var ignoreTouches = false
-    var touched = [UITouch?](repeating: nil, count: 8)
     var touchStack:[MetaTouch] = []
-    var waveform = SynthSound.Square
-    var notes = Scale.Blues.notes
-    var synth = Synthesizer(sound: .Square, isPoly: true)
+    let tileInterface = TileInterface()
     let transitionManager = TransitionManager()
     var polyphonyOn = true
     var viewActive = true
     
-    let onAlpha: CGFloat = 1.0
-    let offAlpha: CGFloat = 0.5
     let animDur: TimeInterval = 0.2
     let animDamp: CGFloat = 0.9
     let animVel: CGFloat = 0.1
@@ -40,33 +35,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        for tile in tiles {
-            tile.color = Util.randomColor()
-        }
+        tileInterface.start(tiles: tiles)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewActive = true
-        let settings = UserSettings.sharedInstance
-        waveform = settings.sound
-        synth = Synthesizer(sound: waveform, isPoly: true)
-        notes = settings.scale.notes
-        touched = [UITouch?](repeating: nil, count: tiles.count)
-        polyphonyOn = settings.polyphonyOn
-        Synthesizer.start()
+        refresh()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        Synthesizer.start()
+        
         if UserSettings.sharedInstance.hideSettingsTab {
             dismissSettingsTab(self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        Synthesizer.stop()
+        do {
+            try Synthesizer.stop()
+        } catch let e {
+            print(e)
+        }
         viewActive = false
         let toVC = segue.destination
         toVC.transitioningDelegate = transitionManager
@@ -80,7 +70,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showSettingsTab(_ sender: UIScreenEdgePanGestureRecognizer) {
-        allNotesOff()
+        tileInterface.allNotesOff()
         ignoreTouches = true
         UIView.animate(withDuration: animDur, delay: 0, usingSpringWithDamping: animDamp, initialSpringVelocity: animVel, options: .curveEaseOut, animations: {
             self.settingsTab.frame.origin.x = 0
@@ -93,51 +83,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwindToHere(_ segue: UIStoryboardSegue) {
-        viewActive = true
+        refresh()
         UIView.animate(withDuration: animDur) {
             self.setNeedsStatusBarAppearanceUpdate()
         }
     }
     
-    func timedDismissSettings(timer: Timer) {
+    @objc func timedDismissSettings(timer: Timer) {
         dismissSettingsTab(self)
-    }
-    
-    func noteOn(_ v: UIView, touch: UITouch) {
-        if touched[v.tag] == nil {
-            let index = v.tag % notes.count
-            let octave = 12 * (v.tag / notes.count)
-            synth.noteOn(note: notes[index] + octave)
-            touched[v.tag] = touch
-            v.alpha = onAlpha
-        }
-    }
-    
-    func noteOff(_ v: UIView) {
-        if touched[v.tag] != nil {
-            let index = v.tag % notes.count
-            let octave = 12 * (v.tag / notes.count)
-            synth.noteOff(note: notes[index] + octave)
-            touched[v.tag] = nil
-            v.alpha = offAlpha
-        }
-    }
-    
-    func allNotesOff() {
-        for tile in tiles {
-            noteOff(tile)
-        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (!polyphonyOn) {
-            allNotesOff()
+            tileInterface.allNotesOff()
         }
         for touch in touches {
             let point = touch.location(in: self.view)
             for v in tiles {
                 if v.frame.contains(point) {
-                    noteOn(v, touch: touch)
+                    tileInterface.noteOn(v.tag)
                     let mt = MetaTouch(touch: touch, tile: v)
                     touchStack.append(mt)
                     break
@@ -164,8 +128,8 @@ class ViewController: UIViewController {
             
             for i in stride(from: touchStack.count - 1, to: -1, by: -1) {
                 if let touched = touched, touchStack[i].touch === touch {
-                    noteOff(touchStack[i].tile)
-                    noteOn(touched, touch: touch)
+                    tileInterface.noteOff(touchStack[i].tile.tag)
+                    tileInterface.noteOn(touched.tag)
                     touchStack[i].tile = touched
                 }
             }
@@ -185,14 +149,30 @@ class ViewController: UIViewController {
             for i in stride(from: touchStack.count - 1, to: -1, by: -1) {
                 if (touchStack[i].touch === touch) {
                     let mt = touchStack.remove(at: i)
-                    noteOff(mt.tile)
+                    tileInterface.noteOff(mt.tile.tag)
                     break
                 }
             }
         }
         
         if !polyphonyOn, let monoTouch = touchStack.last {
-            noteOn(monoTouch.tile, touch: monoTouch.touch)
+            tileInterface.noteOn(monoTouch.tile.tag)
+        }
+    }
+    
+    func refresh() {
+        viewActive = true
+        let settings = UserSettings.sharedInstance
+        tileInterface.reset(
+            sound: settings.sound,
+            scale: settings.scale.notes
+        )
+        polyphonyOn = settings.polyphonyOn
+        
+        do {
+            try Synthesizer.start()
+        } catch let e {
+            print(e)
         }
     }
 }

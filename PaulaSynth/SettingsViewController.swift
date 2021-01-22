@@ -65,14 +65,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBAction func chooseSound(_ button: UIButton) {
         pickerType = .Sound
-        picker.selectRow(SynthSound.keys.index(of: selectedSound)!, inComponent: 0, animated: false)
+        picker.selectRow(SynthSound.keys.firstIndex(of: selectedSound)!, inComponent: 0, animated: false)
         picker.reloadAllComponents()
         showPicker()
     }
     
     @IBAction func chooseScale(_ button: UIButton) {
         pickerType = .Scale
-        picker.selectRow(Scale.list.index(of: selectedScale)!, inComponent: 0, animated: false)
+        picker.selectRow(Scale.list.firstIndex(of: selectedScale)!, inComponent: 0, animated: false)
         picker.reloadAllComponents()
         showPicker()
     }
